@@ -90,58 +90,58 @@ let done = 0;
 
 function preload(){
     //배경 이미지 생성
-    bgImgs[0] = loadImage('photo/scene1-1.png'); //씨앗 심는 구멍
-    bgImgs[1] = loadImage('photo/scene1-2.png'); //씨앗
-    bgImgs[2] = loadImage('photo/scene1-3.png'); //흙 다시
-    bgImgs[3] = loadImage('photo/scene2.png'); //집
-    bgImgs[4] = loadImage('photo/scene3-1.jpg'); //길
-    bgImgs[5] = loadImage('photo/scene3-2.jpg'); //길 + 비
-    bgImgs[6] = loadImage('photo/scene4.png'); //지하철
-    bgImgs[7] = loadImage('photo/scene5-1.png'); //엘리베이터open
-    bgImgs[8] = loadImage('photo/scene5-2.png'); //엘리베이터closing
-    bgImgs[9] = loadImage('photo/scene5-3.png'); //엘리베이터closed
-    bgImgs[50] = loadImage('photo/scene_campus.png'); //캠퍼스 길
-    bgImgs[10] = loadImage('photo/scene6-1.png'); //발사1
-    bgImgs[11] = loadImage('photo/scene6-3.png'); //발사2  ////2or 3
-    bgImgs[12] = loadImage('photo/scene7.jpg'); //집 가는 길
-    bgImgs[13] = loadImage('photo/scene8-1.png'); //집 반전
-    bgImgs[14] = loadImage('photo/scene8-2.png'); //나무
-    bgImgs[15] = loadImage('photo/scene8-3.png'); //나무
-    bgImgs[16] = loadImage('photo/scene8-4.png'); //나무
-    bgImgs[17] = loadImage('photo/scene8-5.png'); //나무
-    bgImgs[18] = loadImage('photo/scene8-6.png'); //나무
-    bgImgs[19] = loadImage('photo/scene8-7.png'); //큰 나무
-    bgImgs[20] = loadImage('photo/scene_opening_.png'); //opening
-    bgImgs[21] = loadImage('photo/scene_ending_.png'); //ending credit
-    bgImgs[22] = loadImage('photo/scene_ending_1.png'); //ending credit 이름
-    bgImgs[23] = loadImage('photo/scene_ending_kim.png'); //ending credit 김강현
-    bgImgs[24] = loadImage('photo/scene_ending_lee.png'); //ending credit 이나영
-    bgImgs[25] = loadImage('photo/scene_ending_choi.png'); //ending credit 최서정
-    bgImgs[26] = loadImage('photo/scene_ending_last.png');
+    bgImgs[0] = loadImage('scene1-1.png'); //씨앗 심는 구멍
+    bgImgs[1] = loadImage('scene1-2.png'); //씨앗
+    bgImgs[2] = loadImage('scene1-3.png'); //흙 다시
+    bgImgs[3] = loadImage('scene2.png'); //집
+    bgImgs[4] = loadImage('scene3-1.jpg'); //길
+    bgImgs[5] = loadImage('scene3-2.jpg'); //길 + 비
+    bgImgs[6] = loadImage('scene4.png'); //지하철
+    bgImgs[7] = loadImage('scene5-1.png'); //엘리베이터open
+    bgImgs[8] = loadImage('scene5-2.png'); //엘리베이터closing
+    bgImgs[9] = loadImage('scene5-3.png'); //엘리베이터closed
+    bgImgs[50] = loadImage('scene_campus.png'); //캠퍼스 길
+    bgImgs[10] = loadImage('scene6-1.png'); //발사1
+    bgImgs[11] = loadImage('scene6-3.png'); //발사2  ////2or 3
+    bgImgs[12] = loadImage('scene7.jpg'); //집 가는 길
+    bgImgs[13] = loadImage('scene8-1.png'); //집 반전
+    bgImgs[14] = loadImage('scene8-2.png'); //나무
+    bgImgs[15] = loadImage('scene8-3.png'); //나무
+    bgImgs[16] = loadImage('scene8-4.png'); //나무
+    bgImgs[17] = loadImage('scene8-5.png'); //나무
+    bgImgs[18] = loadImage('scene8-6.png'); //나무
+    bgImgs[19] = loadImage('scene8-7.png'); //큰 나무
+    bgImgs[20] = loadImage('scene_opening_.png'); //opening
+    bgImgs[21] = loadImage('scene_ending_.png'); //ending credit
+    bgImgs[22] = loadImage('scene_ending_1.png'); //ending credit 이름
+    bgImgs[23] = loadImage('scene_ending_kim.png'); //ending credit 김강현
+    bgImgs[24] = loadImage('scene_ending_lee.png'); //ending credit 이나영
+    bgImgs[25] = loadImage('scene_ending_choi.png'); //ending credit 최서정
+    bgImgs[26] = loadImage('scene_ending_last.png');
     
     //요소 이미지 생성 
-    openButton = loadImage('photo/open_button.png');
-    closeButton = loadImage('photo/close_button.png');
-    elev = loadImage('photo/elev.png'); //날아가는 엘리베이터 이미지
+    openButton = loadImage('open_button.png');
+    closeButton = loadImage('close_button.png');
+    elev = loadImage('elev.png'); //날아가는 엘리베이터 이미지
     //걷는 사람
     for (let i = 1; i <= 3; i++) {
-    walkerImages.push(loadImage(`photo/walkingperson${i}.png`));
+    walkerImages.push(loadImage(`walkingperson${i}.png`));
     }
-    standingImages = loadImage('photo/standingperson.png');
+    standingImages = loadImage('standingperson.png');
 
-    sitImg = loadImage('photo/sitperson.png');
-    standImg = loadImage('photo/standperson.png');
-    seniorImg = loadImage('photo/senior.png');
-    sitseniorImg = loadImage('photo/sitsenior.png');
+    sitImg = loadImage('sitperson.png');
+    standImg = loadImage('standperson.png');
+    seniorImg = loadImage('senior.png');
+    sitseniorImg = loadImage('sitsenior.png');
 
-    runningStranger = loadImage('photo/running_stranger.png');
+    runningStranger = loadImage('running_stranger.png');
 
     //우산
-    momImg = loadImage('photo/mom.png');
-    umbrellaImg = loadImage('photo/umbrella.png');
+    momImg = loadImage('mom.png');
+    umbrellaImg = loadImage('umbrella.png');
     
     // 🔊 사운드 로드
-    sceneSound = loadSound('photo/sound.mp3');
+    sceneSound = loadSound('sound.mp3');
 
 
 
